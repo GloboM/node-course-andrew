@@ -46,6 +46,12 @@ app.get('/',(req,res) => {
     )
 })
 
+app.get('/own',(req,res) => {
+    res.render('own',{
+        title:'My own page'
+})
+})
+
 app.get('/bad',(req,res) => {
     res.send({
         errorMessage:'unable to fullfill your request'
