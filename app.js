@@ -60,6 +60,12 @@ app.get('/about',(req,res) =>{
 });
 })
 
+app.get('/project',(req,res) =>{
+    res.render('project',{
+        title:'Here is the project page'
+})
+})
+
 
 
 app.listen(port,() =>{
